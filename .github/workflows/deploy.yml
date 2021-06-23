@@ -34,7 +34,7 @@ jobs:
       run: mvn -B package --file Gameshop-BE/pom.xml
 
     - name: Build and Push Docker Image
-    - uses: mr-smithers-excellent/docker-build-push@v5
+      uses: mr-smithers-excellent/docker-build-push@v5
       with:
        image: saidkayed/gocut
        registry: docker.io
