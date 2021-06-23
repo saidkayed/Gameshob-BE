@@ -5,6 +5,6 @@ FROM openjdk:8
 
 EXPOSE 8080
 
-ADD target/Gameshop-BE-0.0.1-SNAPSHOT.jar
+ADD target/Gameshop-BE-0.0.1-SNAPSHOT.jar Gameshop-BE-0.0.1-SNAPSHOT.jar
 
 ENTRYPOINT ["java","-jar","/Gameshop-BE-0.0.1-SNAPSHOT.jar"]
