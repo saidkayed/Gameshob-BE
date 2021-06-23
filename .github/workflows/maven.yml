@@ -9,7 +9,10 @@ on:
      - main
 
   pull_request:
-    branches: [ develop ]
+    branches:
+     - main
+     - develop
+     - test
 
 jobs:
   build:
