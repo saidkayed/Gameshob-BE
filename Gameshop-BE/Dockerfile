@@ -1,10 +1,10 @@
 # To change this license header, choose License Headers in Project Properties.
 # To change this template file, choose Tools | Templates
 # and open the template in the editor.
-FROM alpine:latest
+FROM openjdk:8
 
 EXPOSE 8080
 
-ARG JAR_FILE=target/Gameshop-BE-0.0.1-SNAPSHOT.jar
-ADD ${JAR_FILE} app.jar
-ENTRYPOINT ["java","-jar","/app.jar"]
+ADD target/Gameshop-BE-0.0.1-SNAPSHOT.jar
+
+ENTRYPOINT ["java","-jar","/Gameshop-BE-0.0.1-SNAPSHOT.jar"]
