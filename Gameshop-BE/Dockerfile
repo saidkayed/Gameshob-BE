@@ -4,7 +4,7 @@
 FROM openjdk:8
 
 
-COPY target/gameshop-be-api.jar /usr/app/
+COPY Gameshop-BE/target/gameshop-be-api.jar /usr/app/
 WORKDIR /usr/app 
 
 EXPOSE 8080
