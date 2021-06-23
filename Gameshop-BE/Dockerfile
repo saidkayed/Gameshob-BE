@@ -3,8 +3,8 @@
 # and open the template in the editor.
 FROM alpine:latest
 
-ARG WAR_FILE=./target/*.war
+EXPOSE 8080
 
-COPY ${WAR_FILE} webapp.war
-
-CMD ["java", "-Dspring.profiles.active=docker", "-jar", "webapp.war"]
+ARG JAR_FILE=target/Gameshop-BE-0.0.1-SNAPSHOT.jar
+ADD ${JAR_FILE} app.jar
+ENTRYPOINT ["java","-jar","/app.jar"]
