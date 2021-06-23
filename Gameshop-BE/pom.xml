@@ -109,6 +109,7 @@
                 </configuration>
             </plugin>
         </plugins>
+        <finalName>gameshop-be-api</finalName>
     </build>
 
 </project>

@@ -3,8 +3,8 @@
 # and open the template in the editor.
 FROM openjdk:8
 
+ADD target/gameshop-be-api.jar gameshop-be-api.jar
+
 EXPOSE 8080
 
-ADD target/Gameshop-BE-0.0.1-SNAPSHOT.jar Gameshop-BE-0.0.1-SNAPSHOT.jar
-
-ENTRYPOINT ["java","-jar","/Gameshop-BE-0.0.1-SNAPSHOT.jar"]
+ENTRYPOINT ["java","-jar","gameshop-be-api.jar"]
