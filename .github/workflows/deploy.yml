@@ -16,7 +16,7 @@ jobs:
 
     steps:
     
-     - name: Setup MySQL
+    - name: Setup MySQL
       uses: mirromutth/mysql-action@v1.1
       with:
        mysql database: 'gameshop' # Optional, default value is "test". The specified database which will be create
