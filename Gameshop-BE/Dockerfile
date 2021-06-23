@@ -3,7 +3,9 @@
 # and open the template in the editor.
 FROM openjdk:8
 
-ADD target/gameshop-be-api.jar gameshop-be-api.jar
+
+COPY target/gameshop-be-api.jar /usr/app/
+WORKDIR /usr/app 
 
 EXPOSE 8080
 
