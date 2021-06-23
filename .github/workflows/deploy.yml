@@ -39,6 +39,7 @@ jobs:
       with:
        image: saidkayed/gocut
        registry: docker.io
+       dockerfile: Gameshop-BE/Dockerfile
        username: ${{ secrets.DOCKER_USERNAME }}
        password: ${{ secrets.DOCKER_PASSWORD }}
        
