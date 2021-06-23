@@ -9,9 +9,9 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.example</groupId>
-    <artifactId>gameshop</artifactId>
+    <artifactId>Gameshop-BE</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>gameshop</name>
+    <name>Gameshop-BE</name>
     <description>gameshop api</description>
     <properties>
         <java.version>11</java.version>
